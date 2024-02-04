@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Frontend Mentor | Multi-step form</title>
+    <style></style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="sideBar">
+        <ul>
+          <li class="active">Your info</li>
+          <li>Select plan</li>
+          <li>Add-ons</li>
+          <li>Summary</li>
+        </ul>
+      </div>
+
+      <!-- step 1 -->
+
+      <div class="step active">
+        <p class="header">Personal info</p>
+        <p class="sub-header">
+          Please provide your name, email address, and phone number.
+        </p>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="e.g. Stephen King" />
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="e.g. stephenking@lorem.com"
+        />
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phoneNumber"
+          placeholder="e.g. 123-456-7890"
+        />
+        <div class="next-step-btn">Next Step</div>
+      </div>
+
+      <!-- step 2 -->
+
+      <div class="step">
+        <p class="header">Select your plan</p>
+        <p class="sub-header">
+          You have the option of monthly or yearly billing.
+        </p>
+        <div id="plans">
+          <div class="card active">
+            <img src="images/icon-arcade.svg" />
+            <div class="card-text">
+              <div class="card-header">Arcade</div>
+              <div class="price">$9/Mo</div>
+              <p class="additional-text">2 months free</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/icon-advanced.svg" />
+            <div class="card-text">
+              <div class="card-header">Advanced</div>
+              <div class="price">$12/Mo</div>
+              <p class="additional-text">2 months free</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/icon-pro.svg" />
+            <div class="card-text">
+              <div class="card-header">Pro</div>
+              <div class="price">$15/Mo</div>
+              <p class="additional-text">2 months free</p>
+            </div>
+          </div>
+        </div>
+        <div id="duration">
+          <p id="duration-monthly" class="active">Monthly</p>
+          <div id="toggle"></div>
+          <p id="duration-yearly">Yearly</p>
+        </div>
+        <div class="go-back-btn">Go Back</div>
+        <div class="next-step-btn">Next Step</div>
+      </div>
+
+      <!-- step 3 -->
+
+      <div class="step">
+        <div class="header">Pick add-ons</div>
+        <div class="sub-header">
+          Add-ons help enhance your gaming experience.
+        </div>
+        <div class="add-on">
+          <div class="add-ons-header">Online service</div>
+          <div class="add-ons-sub-header">Access to multiplayer games</div>
+          <div class="add-ons-price">+$1/Mo</div>
+        </div>
+        <div class="add-on">
+          <div class="add-ons-header">Larger storage</div>
+          <div class="add-ons-sub-header">Extra 1TB of cloud save</div>
+          <div class="add-ons-price">+$2/Mo</div>
+        </div>
+        <div class="add-on">
+          <div class="add-ons-header">Customizable Profile</div>
+          <div class="add-ons-sub-header">Custom theme on your profile</div>
+          <div class="add-ons-price">+$2/Mo</div>
+        </div>
+        <div class="go-back-btn">Go Back</div>
+        <div class="next-step-btn">Next Step</div>
+      </div>
+
+      <!-- step 4 -->
+
+      <div class="step">
+        <div class="header">Finishing up</div>
+        <div class="sub-header">
+          Double-check everything looks OK before confirming.
+        </div>
+        <div id="summary">
+          <div id="plan">
+            <div id="chosen-plan">Arcade(Monthly)</div>
+            <div class="summary-price">$9/mo</div>
+            <div class="change-btn">Change</div>
+          </div>
+          <hr />
+          <div class="add-ons-summary">
+            <div class="added">Online service</div>
+            <div class="added-price">+$1/mo</div>
+          </div>
+          <div class="add-ons-summary">
+            <div class="added">Larger storage</div>
+            <div class="added-price">+$2/mo</div>
+          </div>
+          <div class="add-ons-summary">
+            <div class="added">Larger storage</div>
+            <div class="added-price">+$2/mo</div>
+          </div>
+        </div>
+        <div id="total">
+          <p>Total (per month)</p>
+          <div id="total-price">+$10/mo</div>
+        </div>
+        <div class="go-back-btn">Go Back</div>
+        <div class="next-step-btn confirm">Confirm</div>
+      </div>
+
+      <!-- step 5 -->
+
+      <div class="step" id="final-step">
+        <img src="images/icon-thank-you.svg" alt="" />
+        <div class="header">Thank you!</div>
+        <div class="sub-header">
+          Thanks for confirming your subscription! We hope you have fun using
+          our platform. If you ever need support, please feel free to email us
+          at support@loremgaming.com.
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://github.com/abdelrahmanlatif04"
+        >Abdelrahman Ibrahem</a
+      >.
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
